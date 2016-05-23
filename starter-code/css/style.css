@@ -1,1 +1,9 @@
 /* file for your css */
+ul li{
+  list-style: none;
+}
+
+.well {
+  display: flex;
+  justify-content: space-between;
+}

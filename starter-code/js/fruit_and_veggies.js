@@ -1,6 +1,8 @@
-//this file defines 2 arrays for you
+var app = angular.module('MyApp', []);
 
-var fruit = [
+//this file defines 2 arrays for you
+app.controller('HomeCtrl', ['$scope', function($scope) {
+$scope.fruit = [
   'Apple',
   'Apricot',
   'Banana',
@@ -55,7 +57,7 @@ var fruit = [
   'Ugli fruit'
   ];
 
-var vegetables = [
+scope.vegetables = [
   'Artichoke',
   'Arugula',
   'Asparagus',
@@ -113,3 +115,5 @@ var vegetables = [
   'Sweet potato',
   'Water chestnut'
   ];
+
+}]);
