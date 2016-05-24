@@ -18,7 +18,7 @@
               <ul>
 
                 <li class="well" ng-repeat="fruit in fruits track by $index"><button class="btn btn-primary">&larr;</button>{{fruit}}
-                <button ng-click="removePoolF(fruit)" class="btn btn-primary" >&rarr;</button>
+                <button ng-click="removePoolF(fruit)" ng-class="incorrect" class="btn btn-primary" ng-class="{'incorrect': incorrect}" >&rarr;</button>
                 </li>
                 
               </ul>
@@ -28,14 +28,14 @@
               <ul>
                  <li class="well" ng-repeat="pool in pools track by $index"><button ng-click="removeFruit(pool)" class="btn btn-primary" >&larr;</button>{{pool}}
                   
-                  <button ng-click="removeVegetable(pool)" class="btn btn-primary" >&rarr;</button>
+                  <button ng-click="removeVegetable(pool)" class="btn btn-primary" ng-class="{'incorrect': incorrect}">&rarr;</button>
                 </li>
               </ul>
           </div>
           <div class="col-sm-4">
           <h2>Veggies</h2>
             <ul>
-              <li class="well" ng-repeat="vegetable in vegetables track by $index"><button ng-click="removePoolV(vegetable)" class="btn btn-primary" >&larr;</button>{{vegetable}}
+              <li class="well" ng-repeat="vegetable in vegetables track by $index"><button ng-click="removePoolV(vegetable)" class="btn btn-primary" ng-class="{'incorrect': incorrect}">&larr;</button>{{vegetable}}
               <button class="btn btn-primary" >&rarr;</button>
               </li>
             </ul>

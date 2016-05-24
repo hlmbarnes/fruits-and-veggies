@@ -1,13 +1,13 @@
 //this file defines 2 SHORT arrays for you
 //this is good (less annoying) for testing
 
-var fruit = [
+var fruitsT = [
   'Apple',
   'Apricot',
   'Banana'
   ];
 
-var vegetables = [
+var vegetablesT = [
   'Artichoke',
   'Arugula',
   'Asparagus'
